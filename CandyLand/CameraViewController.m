@@ -10,6 +10,9 @@
 
 @interface CameraViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *ImageView;
+@property (weak, nonatomic) IBOutlet UIButton *takePhoto;
+
 @end
 
 @implementation CameraViewController
@@ -23,6 +26,30 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)takePhoto:(UIButton *)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+}
+
+- (IBAction)selectPhoto:(UIButton *)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+    
+}
+
 
 /*
 #pragma mark - Navigation

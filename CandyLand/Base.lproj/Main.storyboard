@@ -205,10 +205,10 @@
             </objects>
             <point key="canvasLocation" x="1808" y="-84"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="daK-jD-Cdm">
             <objects>
-                <viewController id="pwK-YR-dH4" sceneMemberID="viewController">
+                <viewController id="pwK-YR-dH4" customClass="CameraViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g6x-FW-Ov1"/>
                         <viewControllerLayoutGuide type="bottom" id="Vmd-ec-O4E"/>
@@ -217,15 +217,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Boc-6w-CGE">
+                                <rect key="frame" x="182" y="65" width="237" height="302"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAX-aF-X2e">
                                 <rect key="frame" x="262" y="375" width="77" height="30"/>
                                 <state key="normal" title="Take Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Boc-6w-CGE">
-                                <rect key="frame" x="182" y="65" width="237" height="302"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -235,6 +235,10 @@
                             <constraint firstItem="Vmd-ec-O4E" firstAttribute="top" secondItem="BAX-aF-X2e" secondAttribute="bottom" constant="195" id="uXc-m8-jjV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ImageView" destination="Boc-6w-CGE" id="yIH-aV-r1V"/>
+                        <outlet property="takePhoto" destination="BAX-aF-X2e" id="wPn-Cz-1xh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozZ-0Y-3Jx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
