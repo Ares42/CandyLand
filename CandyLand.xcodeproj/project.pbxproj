@@ -15,6 +15,12 @@
 		D55538D719C8C57200C35A59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55538D619C8C57200C35A59 /* Images.xcassets */; };
 		D55538DA19C8C57200C35A59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D55538D819C8C57200C35A59 /* LaunchScreen.xib */; };
 		D55538E619C8C57200C35A59 /* CandyLandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55538E519C8C57200C35A59 /* CandyLandTests.m */; };
+		D56C8E4E19CA0309008D9F5D /* CandyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56C8E4D19CA0309008D9F5D /* CandyDetailViewController.m */; };
+		D56C8E5119CA06AE008D9F5D /* CandyDetailScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56C8E5019CA06AE008D9F5D /* CandyDetailScrollViewController.m */; };
+		D56C8E5419CA06C7008D9F5D /* CandyDetailMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D56C8E5319CA06C7008D9F5D /* CandyDetailMapViewController.m */; };
+		D57627C519CA2AE300875159 /* CandyLandListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57627C419CA2AE300875159 /* CandyLandListTableViewController.m */; };
+		D57627C819CA2F4A00875159 /* Candy.m in Sources */ = {isa = PBXBuildFile; fileRef = D57627C719CA2F4A00875159 /* Candy.m */; };
+		D589B1A519CBE034002AF809 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D589B1A419CBE034002AF809 /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,18 @@
 		D55538DF19C8C57200C35A59 /* CandyLandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandyLandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55538E419C8C57200C35A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D55538E519C8C57200C35A59 /* CandyLandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CandyLandTests.m; sourceTree = "<group>"; };
+		D56C8E4C19CA0309008D9F5D /* CandyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandyDetailViewController.h; sourceTree = "<group>"; };
+		D56C8E4D19CA0309008D9F5D /* CandyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandyDetailViewController.m; sourceTree = "<group>"; };
+		D56C8E4F19CA06AE008D9F5D /* CandyDetailScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandyDetailScrollViewController.h; sourceTree = "<group>"; };
+		D56C8E5019CA06AE008D9F5D /* CandyDetailScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandyDetailScrollViewController.m; sourceTree = "<group>"; };
+		D56C8E5219CA06C7008D9F5D /* CandyDetailMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandyDetailMapViewController.h; sourceTree = "<group>"; };
+		D56C8E5319CA06C7008D9F5D /* CandyDetailMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandyDetailMapViewController.m; sourceTree = "<group>"; };
+		D57627C319CA2AE300875159 /* CandyLandListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandyLandListTableViewController.h; sourceTree = "<group>"; };
+		D57627C419CA2AE300875159 /* CandyLandListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandyLandListTableViewController.m; sourceTree = "<group>"; };
+		D57627C619CA2F4A00875159 /* Candy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Candy.h; path = ../Candy.h; sourceTree = "<group>"; };
+		D57627C719CA2F4A00875159 /* Candy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Candy.m; path = ../Candy.m; sourceTree = "<group>"; };
+		D589B1A319CBE034002AF809 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		D589B1A419CBE034002AF809 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +101,15 @@
 		D55538C519C8C57200C35A59 /* CandyLand */ = {
 			isa = PBXGroup;
 			children = (
-				D55538CA19C8C57200C35A59 /* AppDelegate.h */,
-				D55538CB19C8C57200C35A59 /* AppDelegate.m */,
-				D55538D019C8C57200C35A59 /* ViewController.h */,
-				D55538D119C8C57200C35A59 /* ViewController.m */,
 				D55538D319C8C57200C35A59 /* Main.storyboard */,
+				D57627C619CA2F4A00875159 /* Candy.h */,
+				D57627C719CA2F4A00875159 /* Candy.m */,
+				D57627C319CA2AE300875159 /* CandyLandListTableViewController.h */,
+				D57627C419CA2AE300875159 /* CandyLandListTableViewController.m */,
+				D56C8E4C19CA0309008D9F5D /* CandyDetailViewController.h */,
+				D56C8E4D19CA0309008D9F5D /* CandyDetailViewController.m */,
+				D56C8E5519CA06D2008D9F5D /* Details of Candy */,
+				D56C8E5619CA06EC008D9F5D /* Not Gonna touch (for now) */,
 				D55538D619C8C57200C35A59 /* Images.xcassets */,
 				D55538D819C8C57200C35A59 /* LaunchScreen.xib */,
 				D55538CD19C8C57200C35A59 /* CandyLand.xcdatamodeld */,
@@ -120,6 +142,30 @@
 				D55538E419C8C57200C35A59 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D56C8E5519CA06D2008D9F5D /* Details of Candy */ = {
+			isa = PBXGroup;
+			children = (
+				D589B1A319CBE034002AF809 /* CameraViewController.h */,
+				D589B1A419CBE034002AF809 /* CameraViewController.m */,
+				D56C8E4F19CA06AE008D9F5D /* CandyDetailScrollViewController.h */,
+				D56C8E5019CA06AE008D9F5D /* CandyDetailScrollViewController.m */,
+				D56C8E5219CA06C7008D9F5D /* CandyDetailMapViewController.h */,
+				D56C8E5319CA06C7008D9F5D /* CandyDetailMapViewController.m */,
+			);
+			name = "Details of Candy";
+			sourceTree = "<group>";
+		};
+		D56C8E5619CA06EC008D9F5D /* Not Gonna touch (for now) */ = {
+			isa = PBXGroup;
+			children = (
+				D55538CA19C8C57200C35A59 /* AppDelegate.h */,
+				D55538CB19C8C57200C35A59 /* AppDelegate.m */,
+				D55538D019C8C57200C35A59 /* ViewController.h */,
+				D55538D119C8C57200C35A59 /* ViewController.m */,
+			);
+			name = "Not Gonna touch (for now)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +270,14 @@
 			files = (
 				D55538CC19C8C57200C35A59 /* AppDelegate.m in Sources */,
 				D55538CF19C8C57200C35A59 /* CandyLand.xcdatamodeld in Sources */,
+				D57627C519CA2AE300875159 /* CandyLandListTableViewController.m in Sources */,
+				D56C8E5119CA06AE008D9F5D /* CandyDetailScrollViewController.m in Sources */,
 				D55538D219C8C57200C35A59 /* ViewController.m in Sources */,
+				D589B1A519CBE034002AF809 /* CameraViewController.m in Sources */,
+				D56C8E4E19CA0309008D9F5D /* CandyDetailViewController.m in Sources */,
+				D57627C819CA2F4A00875159 /* Candy.m in Sources */,
 				D55538C919C8C57200C35A59 /* main.m in Sources */,
+				D56C8E5419CA06C7008D9F5D /* CandyDetailMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +468,7 @@
 				D55538EB19C8C57200C35A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D55538EC19C8C57200C35A59 /* Build configuration list for PBXNativeTarget "CandyLandTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +477,7 @@
 				D55538EE19C8C57200C35A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
